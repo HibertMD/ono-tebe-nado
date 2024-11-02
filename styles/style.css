@@ -6,6 +6,15 @@
 }
 
 .navigation {
+  height: 100%;
+}
+
+.navigation_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 2px;
 }
 
 .navigation-items {
@@ -15,17 +24,9 @@
   list-style-type: circle;
 }
 
-.navigation_header {
-  justify-self: center;
-  align-self: center;
-  width: 100%;
-}
-
 .navigation-items_header {
   display: flex;
   gap: 34px;
-  margin-top: 5px;
-  margin-left: 50px;
 }
 
 .no-marker {
@@ -41,22 +42,29 @@
   height: 105px;
 }
 
-.contacts {
-}
-
-.contacts_header {
-  display: flex;
-  width: 50%;
-  margin-top: 7px;
-  margin-left: 192px;
-}
-
 .address {
-  display: flex;
-  flex-direction: column;
   font-size: 18px;
+  font-style: normal;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+  align-items: center;
+}
+
+.address-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+  height: 100%;
+  width: 100%;
+}
+
+.address_header {
+  justify-self: end;
+  margin-right: 49px;
+  margin-top: 3px;
+  height: 100%;
+  width: 50%;
 }
 
 .address__item {
@@ -76,7 +84,7 @@
   justify-content: space-between;
   min-height: 757px;
   margin-top: 92px;
-  background-image: url("/images/cover.jpg");
+  background-image: url("images/cover.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -200,19 +208,19 @@
 }
 
 .card_type_film {
-  background-image: url("/images/card-lot-01.jpg");
+  background-image: url("images/card-lot-01.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .card_type_book {
-  background-image: url("/images/card-lot-02.jpg");
+  background-image: url("images/card-lot-02.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .card_type_picture {
-  background-image: url("/images/card-lot-03.jpg");
+  background-image: url("images/card-lot-03.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -300,22 +308,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 31px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
-.contacts_footer {
-  display: flex;
-  width: 60%;
+.address_footer {
   margin-left: 50px;
-}
-
-.navigation_footer {
-  display: flex;
-  justify-self: center;
-  justify-content: center;
-  align-self: center;
-  width: 100%;
   height: 100%;
+  width: 60%;
 }
 
 .navigation-items_footer {
